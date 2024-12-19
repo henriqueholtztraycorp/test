@@ -18,4 +18,6 @@ echo "Profile loaded!"
 echo "env SECRET_TOKEN: $(printenv SECRET_TOKEN)"
 
 echo "command: $@"
+
+dotnet Fbits.Static.Web.dll --environment=Staging
 echo "Finishing initial script..."

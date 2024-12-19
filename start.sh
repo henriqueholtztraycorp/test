@@ -1,2 +1,4 @@
 #!/bin/sh
-echo "Starting test..."
+echo "Starting initial script..."
+exec "$@"
+echo "Finishing initial script..."

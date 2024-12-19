@@ -1,7 +1,8 @@
 #!/bin/sh
 echo "Starting initial script..."
-cat << End >> ~/.profile
-export SECRET_TOKEN=abc123!@#
+cat << End >> /etc/profile
+SECRET_TOKEN=abc123!@#
+export SECRET_TOKEN
 End
-exec "$@"
+echo "$@"
 echo "Finishing initial script..."

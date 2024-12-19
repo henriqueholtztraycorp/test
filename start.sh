@@ -1,7 +1,10 @@
 #!/bin/sh
 echo "Starting initial script..."
-cat << End >> /etc/profile.d/custom.sh
-echo "Running my /etc/profile.d/custom.sh..."
+pwd
+whoami
+cat << End >> /home/app/.profile
+
+echo "Running my /home/app/.profile..."
 SECRET_TOKEN=abc123!@#
 export SECRET_TOKEN
 End

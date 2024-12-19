@@ -11,6 +11,9 @@ SECRET_TOKEN=abc123!@#
 export SECRET_TOKEN
 End
 
+echo "Loading profile..."
 source $PROFILE_PATH
-echo "$@"
+echo "Profile loaded!"
+
+echo "command: $@"
 echo "Finishing initial script..."

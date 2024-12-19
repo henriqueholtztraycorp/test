@@ -12,7 +12,7 @@ export SECRET_TOKEN
 End
 
 echo "Loading profile..."
-source $PROFILE_PATH
+# source $PROFILE_PATH => It doesn't work because some shell uses just "." instead of "source"
 . $PROFILE_PATH
 echo "Profile loaded!"
 echo "env SECRET_TOKEN: $(printenv SECRET_TOKEN)"

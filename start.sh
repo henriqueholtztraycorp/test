@@ -14,6 +14,7 @@ End
 echo "Loading profile..."
 source $PROFILE_PATH
 echo "Profile loaded!"
+echo "env SECRET_TOKEN: $(printenv SECRET_TOKEN)"
 
 echo "command: $@"
 echo "Finishing initial script..."

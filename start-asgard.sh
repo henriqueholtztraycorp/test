@@ -19,4 +19,6 @@ echo "env SECRET_TOKEN_TEST: $(printenv SECRET_TOKEN_TEST)"
 
 echo "command: $@"
 
+dotnet Asgard.API.dll
+
 echo "Finishing initial script..."

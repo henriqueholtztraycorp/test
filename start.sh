@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Starting initial script..."
-pwd
-whoami
+echo "pwd: $(pwd)"
+echo "whoami: $(whoami)"
 cat << End >> /home/app/.profile
 
 echo "Running my /home/app/.profile..."

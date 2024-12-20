@@ -9,8 +9,6 @@ echo "CLUSTER_NAME: $CLUSTER_NAME"
 
 cat << End >> $PROFILE_PATH
 echo "Running my $PROFILE_PATH..."
-NEW_RELIC_LABELS="foo:bar;cluster:$CLUSTER_NAME"
-export NEW_RELIC_LABELS
 export CLUSTER_NAME
 End
 

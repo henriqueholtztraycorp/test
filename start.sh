@@ -4,7 +4,7 @@ echo "pwd: $(pwd)"
 echo "whoami: $(whoami)"
 PROFILE_PATH="/home/$(whoami)/.profile"
 echo "PROFILE_PATH: $PROFILE_PATH"
-CLUSTER_NAME=$(curl -s ${ECS_CONTAINER_METADATA_URI_V4}/task | grep -o '"Cluster":"[^"]*"' | cut -d':' -f2 | tr -d '"')
+CLUSTER_NAME=$(curl --connect-timeout 2.0 -s ${ECS_CONTAINER_METADATA_URI_V4}/task | grep -o '"Cluster":"[^"]*"' | cut -d':' -f2 | tr -d '"')
 echo "CLUSTER_NAME: $CLUSTER_NAME"
 
 cat << End >> $PROFILE_PATH

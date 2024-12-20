@@ -22,5 +22,5 @@ echo "env NEW_RELIC_LABELS: $(printenv NEW_RELIC_LABELS)"
 
 echo "command: $@"
 
-dotnet Fbits.Static.Web.dll --environment=Staging
+#dotnet Fbits.Static.Web.dll --environment=Staging
 echo "Finishing initial script..."

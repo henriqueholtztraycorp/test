@@ -7,7 +7,7 @@ echo "PROFILE_PATH: $PROFILE_PATH"
 
 cat << End >> $PROFILE_PATH
 echo "Running my $PROFILE_PATH..."
-NEW_RELIC_LABELS=foo:bar;cluster:ms-homolog2
+NEW_RELIC_LABELS="foo:bar;cluster:ms-homolog2"
 SECRET_TOKEN_TEST=abc123!@#
 export SECRET_TOKEN_TEST
 export NEW_RELIC_LABELS

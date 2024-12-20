@@ -26,5 +26,5 @@ echo "env NEW_RELIC_PROCESS_HOST_DISPLAY_NAME: $(printenv NEW_RELIC_PROCESS_HOST
 
 echo "command: $@"
 
-#dotnet Fbits.Static.Web.dll --environment=Staging
+dotnet Fbits.Static.Web.dll --environment=Staging
 echo "Finishing initial script..."
